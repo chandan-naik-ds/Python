@@ -1,12 +1,22 @@
-class students:
-    s = 1
+class Rectangle:
+    def __init__(self,width,height):
+        self._width = width
+        self._height = height
 
-    @classmethod
-    def show(cls):
-        print(f"The class atribute a is {cls.s}")
+    
+    @property
+    def width(self):
+        return f"{self._width:.1f}cm"
 
-e = students()
-e.s = 45
-e.name = "Chandan Naik"
-print(e.name)
-e.show()
+    @property
+    def height(self):
+        return f"{self._height:.1f}cm"
+    
+    
+rectangle = Rectangle(3,4)
+
+print(rectangle.width)
+print(rectangle.height)
+
+# print(rectangle._width)  # Should not write the private _width outside its class
+# print(rectangle._height) # Should not write the private _height outside its class
