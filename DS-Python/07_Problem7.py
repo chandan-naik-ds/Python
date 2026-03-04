@@ -2,6 +2,6 @@
 
 words = ["python", "AI", "data", "ML", "engineering", "code"]
 
-new_words = [i for i in words if len(i)>3]
+new_words = [i.upper() for i in words if len(i)>3 ]
 
 print(new_words)

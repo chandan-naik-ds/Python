@@ -2,12 +2,10 @@
 
 marks = [45, 78, 90, 33, 67, 88, 25]
 
-PASS = [i for i in marks if i >=40]
+Pass = [i for i in marks if i >40]
 
-print(PASS)
+print(Pass)
 
-FAIL = [i for i in marks if i <=40]
+fail = [i for i in marks if i<40]
 
-print(FAIL)
-
-
+print(fail)
