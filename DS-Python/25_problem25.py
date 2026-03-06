@@ -13,3 +13,12 @@ data = {
 "Charlie": [92, None, None, 95],
 "David": [70, 75, 72, None]
 }
+
+new_dict = {
+    name : round(sum(n for n in marks if n is not None) /
+        len([n for n in marks if n is not None]),2
+    )
+    for name,marks in data.items()
+}
+
+print(new_dict)
